@@ -52,7 +52,13 @@ function swipeEvent(){
 
     function eventHandle2(ev){
         touchEnd = event.changedTouches[0].clientX
-        alert("터치시작지점:"+touchStart+"터치종료지점:"+touchEnd);
+        var gep = touchStart - touchEnd;
+    }
+    if(gep>50){
+        alert("left");
+    }
+    else{
+        alert("right")
     }
 
 }
