@@ -20,8 +20,8 @@
 html,body{
     background-color: lighten(@mainColor,1%);
     font-family: 'Noto Sans KR', sans-serif;
+    height: 100%;
     font-size: 16px;
-    height: 2000px;
     overflow-x: hidden;
     @media@DesktopMedia{
     }
@@ -161,6 +161,19 @@ div#container{
         }
         section.section1{
             padding-top: 20px;  
+            @media@DesktopMedia{
+                height:800px;
+           }
+           @media@LargeMedia{
+            height:850px;
+
+
+        }    
+        @media@MediumMedia{
+            height:1500px;
+
+        }
+           
 
             h1{
                 padding-left: 20px;
@@ -174,6 +187,8 @@ div#container{
             }
             div.section1_contents{
                 margin-top: 30px;
+           
+
                 h2{
                     padding-left: 20px;
                     color: white;
@@ -246,6 +261,76 @@ div#container{
                     }
                 }
             }
+        }
+
+        section.section2{
+            margin: 20px auto;
+                h2{
+                    padding-left: 20px;
+                    color: white;
+                    font-size: 1.2rem;
+                    font-weight: normal;
+                }
+                div.previews{
+                    width: 100%;
+                    max-width: 1200px;
+                    margin: 0px auto;
+                }
+                div.preview{
+                    width: 100%;
+                    height: 380px;
+                    padding: 10px;
+                    box-sizing: border-box;
+                    @media@DesktopMedia{
+                        width: 50%;
+                        float: left;
+                        padding: 20px;
+                   }
+                        @media@LargeMedia{
+                            width: 50%;
+                            float: left;
+                            padding: 20px;
+                    }  
+                    @media@MediumMedia{
+                        width: 50%;
+                            float: left;
+                            padding: 20px;
+                        
+                    }
+                    div.youtubepopup{
+                        width: 100%;
+                        height: 250px;
+                        background: gray;
+                        margin: 0px auto;
+                        @media@DesktopMedia{
+                            height: 300px;
+                       }
+                        iframe{
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                    div.text{
+                        h3{
+                            color: white;
+                        }
+                        p{
+                            display: inline-block;
+                            background: lighten(@mainColor,10%);
+                            color: lightgray;
+                            border-radius: 2px;
+                            font-size: 0.8rem;
+                        }
+                        div.date{
+                            color: gray;
+
+                        }
+                        div.infomation{
+                            color: white;
+                            font-size: 0.8rem;
+                        }
+                    }
+                }
         }
 
 

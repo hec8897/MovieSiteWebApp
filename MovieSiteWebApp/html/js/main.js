@@ -38,19 +38,15 @@ $(document).ready(function () {
 })
 
 function swipeEvent() {
-
     var outBox = document.querySelector(".contents");
     outBox.addEventListener("touchstart", eventHandle1, false)
     outBox.addEventListener("touchend", eventHandle2, false)
-
     var touchStart = 0;
     var touchEnd = 0;
     var touchNum = 0;
-
     function eventHandle1(ev) {
         touchStart = event.touches[0].clientX;
     }
-
     function eventHandle2(ev) {
         touchEnd = event.changedTouches[0].clientX
         var gep = touchStart - touchEnd;
@@ -59,8 +55,7 @@ function swipeEvent() {
             touchNum++;
             $(".contents").animate({
                 "marginLeft":"-=42%"
-            },100)
-          
+            },100)          
         }
         else if(gep < 50  & touchNum > 0 ) {
             touchNum--;
@@ -68,12 +63,7 @@ function swipeEvent() {
                 "marginLeft":"+=42%"
             },100)            
         }
-
-        console.log(touchNum);
-
-
     }
-
 }
 
 swipeEvent();
