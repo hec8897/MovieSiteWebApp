@@ -8,6 +8,7 @@ body {
   font-family: 'Noto Sans KR', sans-serif;
   font-size: 16px;
   height: 2000px;
+  overflow-x: hidden;
 }
 input,
 button {
@@ -18,6 +19,7 @@ header {
   height: 50px;
   background: #424242;
   position: fixed;
+  z-index: 999;
 }
 header div.head {
   max-width: 1200px;
@@ -84,15 +86,18 @@ div#container nav div.account {
   margin-top: 20px;
 }
 div#container nav div.account p {
-  width: 50%;
+  width: 25%;
   height: 100%;
-  margin-bottom: 30px;
   float: left;
+  font-size: 0.8rem;
   color: white;
+  box-sizing: border-box;
   text-align: center;
 }
 div#container nav div.account ul {
+  width: 100%;
   padding-left: 30px;
+  float: left;
 }
 div#container nav div.account ul h4 {
   margin-top: 30px;
@@ -113,8 +118,45 @@ div#container nav div.account ul li span img {
 }
 div#container main {
   max-width: 1024px;
-  background: white;
   margin: 0px auto;
   position: relative;
   top: 50px;
+}
+div#container main section {
+  max-width: 1024px;
+  margin: 0px auto;
+}
+div#container main section.section1 {
+  padding-top: 20px;
+}
+div#container main section.section1 h1 {
+  padding-left: 20px;
+  color: white;
+  font-size: 1.3rem;
+  line-height: 1.4rem;
+}
+div#container main section.section1 h1 span {
+  font-size: 0.55em;
+  color: #7a7a7a;
+}
+div#container main section.section1 div.section1_contents {
+  margin-top: 30px;
+}
+div#container main section.section1 div.section1_contents h2 {
+  padding-left: 20px;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+div#container main section.section1 div.section1_contents div.contents {
+  width: 450%;
+  height: 350px;
+  padding: 10px;
+}
+div#container main section.section1 div.section1_contents div.contents div {
+  width: 8.5%;
+  height: 100%;
+  margin-right: 0.5%;
+  display: inline-block;
+  background: white;
 }

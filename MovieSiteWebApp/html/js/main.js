@@ -3,9 +3,7 @@ $(document).ready(function () {
     $(".ham_btn").click(function () {
         console.log(clickNum);
         clickNum++;
-
-        if(clickNum == 1){
-            
+        if(clickNum == 1){            
         $("nav").animate({
             "left": "0%"
         })
@@ -22,9 +20,7 @@ $(document).ready(function () {
 
         }
         else{
-
-            $(this).children("div:nth-child(2)").show();
-     
+            $(this).children("div:nth-child(2)").show();     
             $(this).children("div:nth-child(1)").css({
                 "transform": "rotate(0deg)",
                 "top": "0px"
@@ -36,9 +32,25 @@ $(document).ready(function () {
                 "left": "-100%"
             })
             return clickNum = 0;
-
         }
-
     })
 
 })   
+
+function swipeEvent(){
+
+    var outBox = document.querySelector(".contents");
+    outBox.addEventListener("touchstart",eventHandle1,false)
+    outBox.addEventListener("touchend",eventHandle2,false)
+
+    var touchStart = 0;
+    var touchEnd = 0;
+
+    function eventHandle1(ev){
+        touchStart = event.touches[0].clientX;
+        alert(touchStart);
+    }
+
+}
+
+swipeEvent();
