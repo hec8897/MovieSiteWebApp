@@ -73,6 +73,7 @@ div#container nav {
   background-color: #4f4f4f;
   box-sizing: border-box;
   position: fixed;
+  left: -80%;
   top: 50px;
   z-index: 999;
 }
