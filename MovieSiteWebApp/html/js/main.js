@@ -48,7 +48,6 @@ function swipeEvent(){
 
     function eventHandle1(ev){
         touchStart = event.touches[0].clientX;
-        alert("터치시작지점:"+touchStart);
     }
 
     function eventHandle2(ev){
