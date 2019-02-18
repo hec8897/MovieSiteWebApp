@@ -288,8 +288,9 @@ div#container main section.section2 div.preview {
 div#container main section.section2 div.preview div.youtubepopup {
   width: 100%;
   height: 250px;
-  background: gray;
   margin: 0px auto;
+  border: 2px solid #424242;
+  box-sizing: border-box;
 }
 @media (min-width:1200px) {
   div#container main section.section2 div.preview div.youtubepopup {
