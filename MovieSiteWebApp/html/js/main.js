@@ -58,16 +58,18 @@ function swipeEvent() {
         if (gep > 50 & touchNum < 8 ) {
             touchNum++;
             $(".contents").animate({
-                "marginLeft":"-=40%"
+                "marginLeft":"-=42%"
             },100)
           
         }
         else if(gep < 50  & touchNum > 0 ) {
             touchNum--;
             $(".contents").animate({
-                "marginLeft":"+=40%"
+                "marginLeft":"+=42%"
             },100)            
         }
+
+        console.log(touchNum);
 
 
     }
