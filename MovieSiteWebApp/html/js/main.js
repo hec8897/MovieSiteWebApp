@@ -48,7 +48,12 @@ function swipeEvent(){
 
     function eventHandle1(ev){
         touchStart = event.touches[0].clientX;
-        alert(touchStart);
+        alert("터치시작지점:"+touchStart);
+    }
+
+    function eventHandle2(ev){
+        touchEnd = event.changeTouches[0].clientX
+        alert("터치시작지점:"+touchStart+"터치종료지점:"+touchEnd);
     }
 
 }
