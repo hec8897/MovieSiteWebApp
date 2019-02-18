@@ -53,13 +53,13 @@ function swipeEvent(){
     function eventHandle2(ev){
         touchEnd = event.changedTouches[0].clientX
         var gep = touchStart - touchEnd;
-    }
     if(gep>50){
         alert("left");
     }
     else{
         alert("right")
     }
+}
 
 }
 
