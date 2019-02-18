@@ -10,6 +10,18 @@ body {
   height: 2000px;
   overflow-x: hidden;
 }
+@media (max-width:1200px) and (min-width:992px) {
+  html,
+  body {
+    font-size: 14px;
+  }
+}
+@media (max-width:991px) and (min-width:550px) {
+  html,
+  body {
+    font-size: 12px;
+  }
+}
 input,
 button {
   outline: 0 none;
@@ -71,12 +83,12 @@ div#container {
 }
 div#container nav {
   width: 20%;
-  min-width: 300px;
+  min-width: 250px;
   height: 100%;
   background-color: #4f4f4f;
   box-sizing: border-box;
   position: fixed;
-  left: -80%;
+  left: -100%;
   top: 50px;
   z-index: 999;
 }
@@ -117,13 +129,13 @@ div#container nav div.account ul li span img {
   display: inline;
 }
 div#container main {
-  max-width: 1024px;
+  max-width: 1200px;
   margin: 0px auto;
   position: relative;
   top: 50px;
 }
 div#container main section {
-  max-width: 1024px;
+  max-width: 1200px;
   margin: 0px auto;
 }
 div#container main section.section1 {
@@ -152,13 +164,44 @@ div#container main section.section1 div.section1_contents div.contents {
   width: 450%;
   height: 350px;
   padding: 10px;
-  overflow: hidden;
+}
+@media (min-width:1200px) {
+  div#container main section.section1 div.section1_contents div.contents {
+    width: 100%;
+  }
+}
+@media (max-width:1200px) and (min-width:992px) {
+  div#container main section.section1 div.section1_contents div.contents {
+    width: 100%;
+  }
+}
+@media (max-width:991px) and (min-width:550px) {
+  div#container main section.section1 div.section1_contents div.contents {
+    width: 100%;
+  }
 }
 div#container main section.section1 div.section1_contents div.contents div.movie_box {
   width: 8.5%;
   height: 100%;
   margin-right: 1%;
   float: left;
+}
+@media (min-width:1200px) {
+  div#container main section.section1 div.section1_contents div.contents div.movie_box {
+    width: 15%;
+    float: none;
+    display: inline-block;
+  }
+}
+@media (max-width:1200px) and (min-width:992px) {
+  div#container main section.section1 div.section1_contents div.contents div.movie_box {
+    width: 18%;
+  }
+}
+@media (max-width:991px) and (min-width:550px) {
+  div#container main section.section1 div.section1_contents div.contents div.movie_box {
+    width: 30%;
+  }
 }
 div#container main section.section1 div.section1_contents div.contents div.movie_box div.poster {
   width: 100%;
@@ -171,7 +214,7 @@ div#container main section.section1 div.section1_contents div.contents div.movie
 div#container main section.section1 div.section1_contents div.contents div.movie_box div.text h3 {
   color: white;
   font-size: 1.1rem;
-  padding-top: 10px;
+  padding-top: 5px;
 }
 div#container main section.section1 div.section1_contents div.contents div.movie_box div.text p {
   display: inline-block;
