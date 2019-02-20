@@ -280,7 +280,8 @@ div#container main section.section2 div.preview {
 }
 @media (max-width:991px) and (min-width:550px) {
   div#container main section.section2 div.preview {
-    width: 50%;
+    width: 100%;
+    height: 550px;
     float: left;
     padding: 20px;
   }
@@ -295,6 +296,11 @@ div#container main section.section2 div.preview div.youtubepopup {
 @media (min-width:1200px) {
   div#container main section.section2 div.preview div.youtubepopup {
     height: 300px;
+  }
+}
+@media (max-width:991px) and (min-width:550px) {
+  div#container main section.section2 div.preview div.youtubepopup {
+    height: 400px;
   }
 }
 div#container main section.section2 div.preview div.youtubepopup iframe {
@@ -317,4 +323,90 @@ div#container main section.section2 div.preview div.text div.date {
 div#container main section.section2 div.preview div.text div.infomation {
   color: white;
   font-size: 0.8rem;
+}
+div#container main section.section3 {
+  margin: 20px auto;
+  height: 650px;
+}
+div#container main section.section3 h2 {
+  padding-left: 20px;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+div#container main section.section3 div.magargins {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+div#container main section.section3 div.magargins div.magargin {
+  width: 100%;
+  height: 550px;
+  padding: 10px;
+  box-sizing: border-box;
+  float: left;
+}
+div#container main section.section3 div.magargins div.magargin div.magargin_photo {
+  width: 100%;
+  height: 55%;
+  background-image: url(../img/section3_photo.jpg);
+  background-size: cover;
+  background-position: center;
+}
+div#container main section.section3 div.magargins div.magargin div.text {
+  width: 100%;
+  height: 40%;
+  margin-top: 3%;
+  overflow-y: scroll;
+}
+div#container main section.section3 div.magargins div.magargin div.text h3 {
+  color: white;
+}
+div#container main section.section3 div.magargins div.magargin div.text h4 {
+  font-size: 0.9rem;
+  margin: 5px auto;
+}
+div#container main section.section3 div.magargins div.magargin div.text p {
+  font-size: 0.8rem;
+  color: lightgray;
+  line-height: 2rem;
+}
+footer {
+  width: 100%;
+  height: 300px;
+  background: #424242;
+  padding: 10px;
+  box-sizing: border-box;
+}
+footer div.footer_wrap {
+  max-width: 1200px;
+}
+footer div.footer_wrap h3 {
+  text-align: center;
+  height: 30px;
+  font-size: 1.3rem;
+  color: white;
+}
+footer div.footer_wrap ul {
+  text-align: center;
+  margin: 30px auto;
+}
+footer div.footer_wrap ul li {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background: gray;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 20px;
+}
+footer div.footer_wrap ul li:nth-child(1) {
+  background-image: url(../img/fb.png);
+}
+footer div.footer_wrap ul li:nth-child(2) {
+  background-image: url(../img/tw.png);
+}
+footer div.footer_wrap ul li:nth-child(3) {
+  background-image: url(../img/heart.png);
 }
